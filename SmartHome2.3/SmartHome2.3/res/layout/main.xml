@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:gravity="center">
+
+        <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_door" 
+	            android:onClick="onIVDoor"/>
+	        <TextView
+	            android:id="@+id/tvMainDoor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>
+	        <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVAir">
+	        
+	        <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_air"
+	            android:onClick="onIVAir" />
+	        <TextView
+	            android:id="@+id/tvMainAir"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        	        	        
+		</LinearLayout>	
+        
+    </TableRow>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B7B7B7"/>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:gravity="center">
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVCurtain">
+	        <ImageView
+	            android:id="@+id/imageView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_curtain"
+	            android:onClick="onIVCurtain" />
+	        <TextView
+	            android:id="@+id/tvMainCurtain"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="状态：关"
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVLamp">
+            
+	        <ImageView
+	            android:id="@+id/ivLamp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_lamp"
+	            android:onClick="onIVLamp" />
+	        <TextView
+	            android:id="@+id/tvMainRoomLamp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="房："
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/tvMainLivingLamp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="厅："
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </LinearLayout>
+    </TableRow>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B7B7B7"/>
+
+    <TableRow
+        android:id="@+id/tableRow2.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:gravity="center">
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVMode">
+	        <ImageView
+	            android:id="@+id/imageView4.5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/mode"
+	            android:onClick="onIVMode" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="情景模式"
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        
+	        <TextView
+	            android:id="@+id/tvMainAirTemperature"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="温："
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/tvMainAirHumidity"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="湿："
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/tvMainRan"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="燃："
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <TextView
+	            android:id="@+id/tvMainYan"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="烟："
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />        	        
+		</LinearLayout>
+    </TableRow>
+    
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B7B7B7"/>
+        
+        <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:gravity="center">
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVConfig">
+	        <ImageView
+	            android:id="@+id/imageView5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_config"
+	            android:onClick="onIVConfig" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="网络设置"
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:onClick="onIVExit">
+	        <ImageView
+	            android:id="@+id/imageView6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/main_exit" 
+	            android:onClick="onIVExit"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="退出"
+	            android:textColor = "#FFFFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+        
+    </TableRow>
+  
+</TableLayout>  

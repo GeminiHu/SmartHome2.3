@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+	android:gravity="center"
+	android:background="@drawable/background"
+    android:padding="20dp">
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+        
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="用户名："
+	        android:textColor = "#FFFFFF"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <EditText
+	        android:id="@+id/etUser"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="密    码："
+	        android:textColor = "#FFFFFF"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	
+	    <EditText
+	        android:id="@+id/etPass"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:password="true"
+	        android:ems="10" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/button1_01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="设置密码01"
+	        android:onClick="onBtnSetPass01" />
+	
+	    <Button
+	        android:id="@+id/button2_01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="登录01" 
+	        android:onClick="onBtnLogin01"/>
+	
+	    <Button
+	        android:id="@+id/button3_01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="取消01" 
+	        android:onClick="onBtnCancel01"/>
+	</LinearLayout>
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/button1_02"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="设置密码02"
+	        android:onClick="onBtnSetPass02" />
+	
+	    <Button
+	        android:id="@+id/button2_02"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="登录02" 
+	        android:onClick="onBtnLogin02"/>
+	
+	    <Button
+	        android:id="@+id/button3_02"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="取消02" 
+	        android:onClick="onBtnCancel02"/>
+	</LinearLayout>
+</LinearLayout>

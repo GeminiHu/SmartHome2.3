@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geclab.smarthome"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.geclab.smarthome.Advertise"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.geclab.smarthome.Login"
+            android:label="@string/login_title">
+            <intent-filter>
+                <action android:name="com.geclab.smarthome.LOGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.geclab.smarthome.MainPage"
+            android:label="@string/main_page_title">
+        </activity>
+        
+        <activity
+            android:name="com.geclab.smarthome.MainPage02"
+            android:label="@string/main_page_title02">
+        </activity>
+        
+        <activity
+            android:name="com.geclab.smarthome.ChildDoor"
+            android:label="@string/child_door_title">
+        </activity>
+        
+        <activity
+            android:name="com.geclab.smarthome.ChildAir"
+            android:label="@string/child_air_title">
+        </activity>
+        <activity
+            android:name="com.geclab.smarthome.ChildCurtain"
+            android:label="@string/child_curtain_title">
+        </activity>
+        <activity
+            android:name="com.geclab.smarthome.ChildLamp"
+            android:label="@string/child_lamp_title">
+        </activity>
+        <activity
+            android:name="com.geclab.smarthome.ChildMode"
+            android:label="@string/child_mode_title">
+        </activity>
+        
+        <activity
+            android:name="com.geclab.smarthome.ChildDoor02"
+            android:label="@string/child_door_title">
+        </activity>
+        
+        <activity
+            android:name="com.geclab.smarthome.ChildAir02"
+            android:label="@string/child_air_title">
+        </activity>
+        <activity
+            android:name="com.geclab.smarthome.ChildCurtain02"
+            android:label="@string/child_curtain_title">
+        </activity>
+        <activity
+            android:name="com.geclab.smarthome.ChildLamp02"
+            android:label="@string/child_lamp_title">
+        </activity>
+        <activity
+            android:name="com.geclab.smarthome.ChildMode02"
+            android:label="@string/child_mode_title02">
+        </activity>
+        <activity
+            android:name="com.geclab.smarthome.ChildConfig"
+            android:label="ChildConfig">
+        </activity>
+        <service android:name="ServiceSocket" >/*添加service*/
+		   <intent-filter> 
+		      <action android:name="MY_RECEIVER"/>  
+           </intent-filter>
+		</service> 
+                        
+	</application>
+
+   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>   
+   <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>   
+   <uses-permission android:name="android.permission.INTERNET"></uses-permission>   
+   <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>   
+</manifest>

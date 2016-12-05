@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/background"
+    android:orientation="vertical" 
+    android:gravity="center">
+    
+	<TableLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="2">
+	   <TableRow>
+			<TextView
+			    android:id="@+id/addr_view"		  		  
+				android:textSize="15px"		  
+				android:layout_column="1"
+				android:layout_width="wrap_content"
+				android:text="服务器IP：" 
+				android:textColor = "#FFFFFF"
+				android:layout_marginLeft="50dp"/>
+			<EditText
+			    android:id="@+id/connectionurl"
+				android:gravity="left"
+				android:layout_marginRight="30dip"
+				android:hint="请输入服务器IP地址"/>	
+		</TableRow>
+		<TableRow>
+		    <TextView
+		        android:text="服务器端口："
+		        android:textColor = "#FFFFFF"
+		        android:textSize="15px"
+			    android:layout_column="1"
+			    android:layout_marginLeft="50dp"/>	
+		
+		    <EditText 
+		        android:id="@+id/controlurl"
+		        android:gravity="left"
+		        android:layout_marginRight="30dip"
+		        android:hint="请输入服务器端口号"/>
+		</TableRow>
+	</TableLayout>	
+</LinearLayout>
